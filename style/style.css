@@ -1,0 +1,74 @@
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.header__inner {
+  padding-top: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-right: 300px;
+  cursor: pointer;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 73px;
+}
+
+.item-active {
+  color: #C05AFF;
+}
+
+.header__add {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__add-lang {
+  font-weight: 600;
+  letter-spacing: 0.18px;
+  padding-right: 23px;
+  position: relative;
+}
+
+.header__add-lang::after {
+  content: "";
+  background: url("../img/arrow.svg");
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 10px;
+  right: 0;
+  top: 5px;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
