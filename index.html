@@ -32,5 +32,41 @@
         </div>
     </header>
     <!-- Header end -->
+
+    <!-- Courses start -->
+    <section class="courses">
+        <div class="container">
+            <div class="courses__left">
+                <div class="courses__left-inner">
+                    <button class="courses__left-btn">Язык</button>
+                    <form action="" class="courses__left-form form">
+                        <h3 class="form__title">Продолжительность</h3>
+                        <div class="form__range">
+                            <label class="form__label-range form__label" for="range">От 1 до 6 мес.</label><input type="range" min="1" max="6" value="1" id="range">
+                            <input type="range" min="1" max="6" value="6">
+                        </div>
+                        <h3 class="form__title">Сложность</h3>
+                        <div class="form__radio">
+                            <input type="radio" value="all" name="radio" id="radio-1"><label class="form__label-radio form__label" for="radio-1"> Для всех </label>
+                            <input type="radio" value="begin" name="radio" id="radio-2"><label class="form__label-radio form__label" for="radio-2"> Для начинающих </label>
+                            <input type="radio" value="end" name="radio" id="radio-3"><label class="form__label-radio form__label" for="radio-3"> Продвинутый уровень </label>
+                        </div>
+                        <h3 class="form__title">Навыки</h3>
+                        <div class="form__check">
+                            <label class="form__label-check form__label"> Грамматика <input type="checkbox" value="1" name="checkbox"></label>
+                            <label class="form__label-check form__label"> Лексика <input type="checkbox" value="2" name="checkbox"></label>
+                            <label class="form__label-check form__label"> Синтаксис <input type="checkbox" value="3" name="checkbox"></label>
+                            <label class="form__label-check form__label"> Фонетика <input type="checkbox" value="4" name="checkbox"></label>
+                            <label class="form__label-check form__label"> Пунктуация <input type="checkbox" value="5" name="checkbox"></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="courses__right"></div>
+        </div>
+        <img src="./img/left.svg" alt="left" class="left__dec">
+    </section>
+    <!-- Courses end  -->
+
 </body>
 </html>

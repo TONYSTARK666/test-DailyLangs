@@ -26,6 +26,10 @@ a {
   margin: 0 auto;
 }
 
+.header {
+  margin-bottom: 75px;
+}
+
 .header__inner {
   padding-top: 55px;
   display: flex;
@@ -71,4 +75,132 @@ a {
   right: 0;
   top: 5px;
   cursor: pointer;
+}
+
+.courses__left-btn {
+  border-radius: 100px;
+  background: #C05AFF;
+  border: none;
+  padding: 15px 96px 15px 60px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.85px;
+  position: relative;
+  margin-bottom: 78px;
+}
+
+.courses__left-btn::after {
+  content: "";
+  background: url("../img/arrow_white.svg");
+  position: absolute;
+  display: block;
+  width: 17px;
+  height: 10px;
+  left: 125px;
+  top: 22px;
+  cursor: pointer;
+}
+
+.form__title {
+  margin-bottom: 33px;
+  font-weight: 600;
+  letter-spacing: 0.18px;
+}
+
+.form__label {
+  font-weight: 500;
+  letter-spacing: 0.18px;
+}
+
+.form__label-range {
+  margin-bottom: 19px;
+}
+
+.form__range {
+  display: flex;
+  flex-direction: column;
+  max-width: 189px;
+  position: relative;
+  margin-bottom: 46px;
+}
+
+input[type=range] {
+  height: 1px;
+  z-index: 1;
+  -webkit-appearance: none;
+}
+
+input[type=range]:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 1px;
+  background: #C05AFF;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  background: #C05AFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+  border-radius: 50%;
+}
+
+.form__radio {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.form__label-radio::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  padding-right: 21px;
+  background: url(../img/radio.svg) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+input[type=radio]:checked + .form__label-radio::before {
+  background: url(../img/radio_fill.svg) 0 0 no-repeat;
+}
+
+.form__check {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form__label-check {
+  line-height: 104%;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.form__label-check::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  padding-right: 25px;
+  background: url(../img/check.svg) 0 0 no-repeat;
+  cursor: pointer;
+}
+
+.left__dec {
+  padding-left: 95px;
+  padding-top: 20px;
 }/*# sourceMappingURL=style.css.map */
